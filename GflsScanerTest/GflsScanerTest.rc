@@ -1,0 +1,1003 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\GflsScanerTest.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\GflsScanerTest.ico"
+IDR_GFLSSCTYPE          ICON                    "res\\GflsScanerTestDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "装载采集动态库...",                  ID_LOAD_LIVECAPTDLL
+        MENUITEM "初始化采集仪",                      ID_SCANNER_INITLIVECAPT
+        MENUITEM "选择采集通道...",                   ID_SCANNER_SELECTCHANNEL
+        MENUITEM SEPARATOR
+        MENUITEM "装载拼接动态库...",                  ID_LOAD_MOSAICDLL
+        MENUITEM SEPARATOR
+        MENUITEM "连续采集图像并保存",                   ID_STDCHK_CAPTIMAGESTOSAVE
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "标准检测(&C)"
+    BEGIN
+        MENUITEM "5.3.3 有效图像尺寸检测",              ID_STDCHK_VALIDIMAGESIZE
+        MENUITEM "5.3.4 图像像素数检测",               ID_STDCHK_IMAGEPIXELCOUNT
+        MENUITEM "5.3.5 图像中心偏差检测",              ID_STDCHK_CENTERDIFF
+        MENUITEM "5.3.6 图像分辨率检测",               ID_STDCHK_IMGRESOLUTION
+        MENUITEM SEPARATOR
+        MENUITEM "5.3.7 图像畸变检测",                ID_STDCHK_IMGABERRANCE
+        MENUITEM "5.3.8 图像背景灰度值检测",             ID_STDCHK_IMGBACKGRAYAVERAGE
+        MENUITEM "5.3.9 图像背景灰度不均匀度检测",          ID_STDCHK_IMGBACKGRAYUNAVE
+        MENUITEM "5.3.10 中心区域图像灰度值检测",          ID_STDCHK_IMGCENTERGRAY
+        MENUITEM "5.3.11 灰度动态范围检测",             ID_STDCHK_IMGGRAYVARIAN
+        MENUITEM "5.3.12 图像疵点检测",               ID_STDCHK_IMGBADPOINT
+        MENUITEM SEPARATOR
+        MENUITEM "5.3.13 环境光检测",                ID_STDCHK_ENVIRONMENT
+        MENUITEM "5.3.14 图像解析度检测",              ID_STDCHK_IMGPARSE
+        MENUITEM SEPARATOR
+        MENUITEM "5.3.15 采集速率检测",               ID_STDCHK_CAPTSPEED
+    END
+    POPUP "拼接测试(&M)"
+    BEGIN
+        POPUP "采集并拼接滚动指纹"
+        BEGIN
+            MENUITEM "左右滚动",                        ID_MOSAIC_ROLL1FINGER
+            MENUITEM "上下滚动",                        ID_MOSAIC_ROLL2FINGER
+            MENUITEM "左右上下滚动",                      ID_MOSAIC_ROLL3FINGER
+        END
+        MENUITEM "采集并拼接平面指纹",                   ID_MOSAIC_PLAINFINGER
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+    END
+    POPUP "采集函数测试"
+    BEGIN
+        MENUITEM "设置当前图像的采集位置宽度高度",             ID_SETPWH
+        MENUITEM "调用采集设备的属性设置对话框",              ID_GETSETUPDLG
+    END
+    POPUP "拼接函数测试"
+    BEGIN
+        MENUITEM "拼接接口是否提供判断图像为指纹的函数",          ID_ISISFIN
+        MENUITEM "拼接接口是否提供判断图像质量的函数",           ID_ISSIMGQUA
+        MENUITEM "拼接接口是否提供判断指纹质量的函数",           ID_ISSFINQUA
+        MENUITEM "接口是否提供拼接指纹的图像增强功能",           ID_ISSIMGEN
+        MENUITEM "判断图像质量",                      ID_IMGQUA
+        MENUITEM "判断指纹质量",                      ID_FINQUA
+        MENUITEM "对图像进行增强",                     ID_IMGENH
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于活体采集测试(&A)...",             ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于活体指纹采集仪测试"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "活体指纹采集仪测试 6.2.0.3 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2006",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DIALOG_IMAGEINFO DIALOGEX 0, 0, 246, 346
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图像信息(1600 x 1500 @ 100%)"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "蓝色框选中区域的图像灰度信息：",IDC_STATIC,7,56,232,147
+    CONTROL         "",IDC_STATIC_GRAYSTAT2,"Static",SS_LEFTNOWORDWRAP | SS_NOTIFY | WS_GROUP,31,73,172,66,WS_EX_STATICEDGE
+    RTEXT           "平均值：",IDC_STATIC,14,145,49,8
+    RTEXT           "标准偏差：",IDC_STATIC,14,160,49,8
+    RTEXT           "中间值：",IDC_STATIC,14,175,49,8
+    RTEXT           "总像素：",IDC_STATIC,14,190,49,8
+    RTEXT           "灰度范围：",IDC_STATIC,136,145,41,8
+    RTEXT           "数量：",IDC_STATIC,136,160,41,8
+    RTEXT           "百分比：",IDC_STATIC,136,175,41,8
+    LTEXT           "",IDC_STATIC_AVERAGE2,68,145,56,8
+    LTEXT           "",IDC_STATIC_DIFF2,68,160,56,8
+    LTEXT           "",IDC_STATIC_MEDIAN2,68,175,56,8
+    LTEXT           "",IDC_STATIC_PIXELCNT2,68,190,56,8
+    LTEXT           "",IDC_STATIC_RANGE2,180,145,51,8
+    LTEXT           "",IDC_STATIC_CNTINRANGE2,180,160,51,8
+    LTEXT           "",IDC_STATIC_PERCENT2,180,175,51,8
+    GROUPBOX        "整幅图像的灰度信息：",IDC_STATIC,7,6,232,42
+    RTEXT           "平均值：",IDC_STATIC,15,21,42,8
+    RTEXT           "标准偏差：",IDC_STATIC,15,35,42,8
+    RTEXT           "中间值：",IDC_STATIC,129,21,42,8
+    LTEXT           "",IDC_STATIC_AVERAGE3,60,21,43,8
+    LTEXT           "",IDC_STATIC_DIFF3,60,35,43,8
+    LTEXT           "",IDC_STATIC_MEDIAN3,174,21,43,8
+    RTEXT           "总像素：",IDC_STATIC,129,35,42,8
+    LTEXT           "",IDC_STATIC_PIXELCNT3,174,35,43,8
+    EDITTEXT        IDC_EDIT_STDCHK_ROLE,7,226,232,113,ES_MULTILINE | ES_READONLY | NOT WS_BORDER | WS_VSCROLL,WS_EX_STATICEDGE
+    LTEXT           "图像灰度不均匀度检测要求:",IDC_STATIC_STDCHKTYPE,7,214,232,8
+END
+
+IDD_CHECKTOOL_FORM DIALOG 0, 0, 187, 94
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED
+FONT 9, "宋体"
+BEGIN
+END
+
+IDD_DIALOG_CHECKTOOL DIALOGEX 0, 0, 463, 365
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "标准网格标定检测样板"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "保存",IDOK,352,344,50,14
+    PUSHBUTTON      "关闭",IDCANCEL,406,344,50,14
+    LTEXT           "",IDC_STATIC_FORMPLACE,6,6,446,324,0,WS_EX_STATICEDGE
+END
+
+IDD_DIALOG_GRAYSTAT DIALOGEX 0, 0, 246, 170
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "整个图像的灰度直方图信息"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STATIC_GRAYSTAT,"Static",SS_LEFTNOWORDWRAP | SS_NOTIFY | WS_GROUP,26,14,194,83,WS_EX_STATICEDGE
+    GROUPBOX        "",IDC_STATIC,7,2,232,161
+    RTEXT           "平均值：",IDC_STATIC,12,105,49,8
+    RTEXT           "标准偏差：",IDC_STATIC,12,120,49,8
+    RTEXT           "中间值：",IDC_STATIC,12,135,49,8
+    RTEXT           "总像素：",IDC_STATIC,12,150,49,8
+    RTEXT           "灰度范围：",IDC_STATIC,134,105,41,8
+    RTEXT           "数量：",IDC_STATIC,134,120,41,8
+    RTEXT           "百分比：",IDC_STATIC,134,135,41,8
+    LTEXT           "",IDC_STATIC_AVERAGE,65,105,56,8
+    LTEXT           "",IDC_STATIC_DIFF,65,120,56,8
+    LTEXT           "",IDC_STATIC_MEDIAN,65,135,56,8
+    LTEXT           "",IDC_STATIC_PIXELCNT,65,150,56,8
+    LTEXT           "",IDC_STATIC_RANGE,178,105,51,8
+    LTEXT           "",IDC_STATIC_CNTINRANGE,178,120,51,8
+    LTEXT           "",IDC_STATIC_PERCENT,178,135,51,8
+END
+
+IDD_DIALOG_TOPBAR DIALOGEX 0, 0, 743, 74
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    CONTROL         "采集图像",IDC_CHECK_STARTCAPTURE,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,5,4,46,14
+    PUSHBUTTON      "另存为...",IDC_BTN_SAVE2FILE,53,4,46,14
+    PUSHBUTTON      "文件导入...",IDC_BTN_FROMFILE,101,4,47,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,2,2,2,43
+    CONTROL         "只显示图像",IDC_CHECK_ONLYSHOWIMG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,150,6,56,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,4,23,672,1
+    LTEXT           "鼠标位置信息:",IDC_STATIC,221,6,52,8
+    LTEXT           "",IDC_STATIC_FOCUSINFO_X,311,6,23,8
+    RTEXT           "对比度",IDC_STATIC,491,5,25,8
+    RTEXT           "亮度",IDC_STATIC,499,30,20,8
+    SCROLLBAR       IDC_CONTRAST_SCROLL,526,2,105,11
+    SCROLLBAR       IDC_BRIGHT_SCROLL,525,28,108,11
+    LTEXT           "",IDC_STATIC_CONTRAST,636,6,26,8
+    LTEXT           "",IDC_STATIC_BRIGHT,637,30,26,8
+    LTEXT           "横向(X):",IDC_STATIC,276,6,32,8
+    LTEXT           "",IDC_STATIC_FOCUSINFO_Y,377,6,23,8
+    LTEXT           "纵向(Y):",IDC_STATIC,341,6,32,8
+    LTEXT           "",IDC_STATIC_FOCUSINFO_GRAY,430,6,23,8
+    LTEXT           "灰度:",IDC_STATIC,406,6,20,8
+    LTEXT           "选择框信息:",IDC_STATIC,141,30,44,8
+    LTEXT           "左上角(x,y):",IDC_STATIC,192,30,48,8
+    LTEXT           "",IDC_STATIC_AREALEFTTOP,245,30,38,8
+    LTEXT           "右下角(x,y):",IDC_STATIC,285,30,48,8
+    LTEXT           "",IDC_STATIC_AREARIGHTBOTTOM,340,30,38,8
+    LTEXT           "大小:",IDC_STATIC,381,30,20,8
+    LTEXT           "",IDC_STATIC_AREASIZE,405,30,34,8
+    LTEXT           "对角线:",IDC_STATIC,441,30,28,8
+    LTEXT           "",IDC_STATIC_AREAINFO,472,30,28,8
+    PUSHBUTTON      "缩小",IDC_BTN_ZOOMOUT,36,28,25,14
+    PUSHBUTTON      "放大",IDC_BTN_ZOOMIN,5,28,25,14
+    CONTROL         "插值缩放 ",IDC_CHECK_INSERTZOOM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,93,29,45,10
+    PUSHBUTTON      "反相",IDC_BTN_REVERSE,69,28,19,13
+    PUSHBUTTON      "物理距离",IDC_BTN_PHYDISTANCE,6,48,50,18
+    LTEXT           "DPI:",IDC_STATIC,60,54,18,8
+    LTEXT           " ",IDC_STATIC_DPI,84,54,54,8
+    PUSHBUTTON      "公司测试",IDC_BTN_GAFISTEST,150,48,50,18
+    PUSHBUTTON      "矩形框显示设置",IDC_BUTTON_SETSQUARE,214,48,78,18
+    LTEXT           "序号:",IDC_STATIC,299,54,21,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_SN,324,51,110,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    PUSHBUTTON      "写入",IDC_BTN_SETSN,435,43,21,14,NOT WS_VISIBLE
+    PUSHBUTTON      "读取",IDC_BTN_GETSN,435,58,21,14,NOT WS_VISIBLE
+    RTEXT           "黑平衡",IDC_STATIC,488,50,30,8
+    SCROLLBAR       IDC_BLACKBALANCE_SCROLL,525,49,108,11
+    LTEXT           "",IDC_STATIC_BLACKBALANCE,638,49,26,8
+END
+
+IDD_DIALOG_ABBRANCEBAR DIALOGEX 0, 0, 707, 65
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_A1TOCENTER,73,5,30,14,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_A2TOCENTER,73,29,30,14,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_A3TOCENTER,176,5,30,14,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_A4TOCENTER,176,29,30,14,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_B1TOA1DIST,255,5,30,14,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_B1TOA2DIST,255,27,30,14,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_B2TOA2DIST,334,5,30,14,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_B2TOA3DIST,334,27,30,14,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_B3TOA3DIST,413,5,30,14,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_B3TOA4DIST,413,27,30,14,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_B4TOA4DIST,492,5,30,14,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_B4TOA1DIST,492,27,30,14,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,2,2,2,64
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,4,23,672,1
+    LTEXT           "A1到样板中心距离:",IDC_STATIC,5,7,68,8
+    LTEXT           "A2到样板中心距离:",IDC_STATIC,5,30,68,8
+    LTEXT           "A3到样板中心距离:",IDC_STATIC,108,7,68,8
+    LTEXT           "A4到样板中心距离:",IDC_STATIC,108,30,68,8
+    LTEXT           "B1到A1距离:",IDC_STATIC,211,7,44,8
+    LTEXT           "B2到A2距离:",IDC_STATIC,290,7,44,8
+    LTEXT           "B3到A3距离:",IDC_STATIC,369,7,44,8
+    LTEXT           "B4到A4距离:",IDC_STATIC,448,7,44,8
+    LTEXT           "B1到A2距离:",IDC_STATIC,211,30,44,8
+    LTEXT           "B2到A3距离:",IDC_STATIC,290,30,44,8
+    LTEXT           "B3到A4距离:",IDC_STATIC,369,30,44,8
+    LTEXT           "B4到A1距离:",IDC_STATIC,448,30,44,8
+    EDITTEXT        IDC_EDIT_ABRRANCEVALUE,73,48,601,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "计算图像的畸变",IDC_BTN_CALCIMGABER,5,48,64,14
+END
+
+IDD_DIALOG_STDCHKBAR DIALOGEX 0, 0, 670, 42
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    RTEXT           "背景灰度不均匀度检测结果:",IDC_STATIC_STDCHKRESULT,5,6,100,8
+    EDITTEXT        IDC_EDIT_STDCHKRESULT,181,7,482,38,ES_MULTILINE | ES_READONLY | NOT WS_BORDER | WS_VSCROLL,WS_EX_STATICEDGE
+    CONTROL         "显示疵点的分布",IDC_CHECK_SHOWBADPT,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE,5,23,76,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,2,2,2,43
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,61,17,10,14
+END
+
+IDD_STDCHK_CAPTSPEED DIALOGEX 0, 0, 246, 132
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "采集速率检测"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "关闭",IDCANCEL,189,111,50,14
+    GROUPBOX        "",IDC_STATIC,6,2,233,103
+    PUSHBUTTON      "开始速率检测",IDC_BTN_CAPTURESPEED,12,56,36,27,BS_MULTILINE
+    EDITTEXT        IDC_EDIT_CAPTUREFRAME,55,63,52,14,ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           "采集帧数",IDC_STATIC,55,51,52,8
+    CTEXT           "耗费时间(s)",IDC_STATIC,117,51,52,8
+    CTEXT           "速率(帧/s)",IDC_STATIC,179,51,52,8
+    EDITTEXT        IDC_EDIT_CAPTURETIME,117,63,52,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_CAPTURESPEED,179,63,52,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "Progress1",IDC_CAPTURE_PROGRESS,"msctls_progress32",0x0,55,86,175,14
+    LTEXT           "    按照GB/T XXX-XXXX 活体指纹采集仪图像采集和拼接接口规范，连续采集300幅图像，采集测试程序自动计算耗费时间，要求采集时间小于等于20秒，采集速率为：≥15帧/s。",IDC_STATIC,12,13,218,28
+END
+
+IDD_DIALOG_CAPTIMAGES2SAVE DIALOG 0, 0, 246, 128
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图像采集和存储"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_IMAGEFILEPATH,70,33,149,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_IMAGEFILEPATH,220,33,14,14
+    CONTROL         "保存为BMP文件",IDC_RADIO_IMGFMTBMP,"Button",BS_AUTORADIOBUTTON | WS_GROUP,70,57,71,10
+    CONTROL         "保存为RAW文件",IDC_RADIO_IMGFMTRAW,"Button",BS_AUTORADIOBUTTON,153,57,71,10
+    EDITTEXT        IDC_EDIT_IMAGEFILENAME,70,77,44,14,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,7,2,232,99
+    CONTROL         "把连续采集到的图像存储为系列图像文件",IDC_CHECK_SAVECAPTIMAGE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,13,219,10
+    LTEXT           "图像存储路径：",IDC_STATIC,13,35,56,8
+    LTEXT           "图像存储格式：",IDC_STATIC,13,57,56,8
+    LTEXT           "图像文件前缀：",IDC_STATIC,13,80,56,8
+    LTEXT           "(最多保存1000幅图像,循环覆盖)",IDC_STATIC,116,80,118,8
+    PUSHBUTTON      "关闭",IDCANCEL,189,107,50,14
+END
+
+IDD_DIALOG_GRAYRAWOPT DIALOG 0, 0, 221, 165
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Raw图像文件选项"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,116,144,45,14
+    PUSHBUTTON      "取消",IDCANCEL,165,144,45,14
+    EDITTEXT        IDC_EDIT_IMGWIDTH,64,54,72,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_IMGHEIGHT,64,73,72,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "描述",IDC_STATIC_DESC,13,10,187,8
+    LTEXT           "(1024字节)",IDC_STATIC_FILESIZE,13,24,187,8
+    GROUPBOX        "尺寸",IDC_STATIC,13,41,197,50
+    LTEXT           "宽度(W):",IDC_STATIC,27,57,33,8
+    LTEXT           "高度(H):",IDC_STATIC,27,76,33,8
+    LTEXT           "像素",IDC_STATIC,142,57,17,8
+    LTEXT           "像素",IDC_STATIC,142,76,17,8
+    EDITTEXT        IDC_EDIT_IMAGEHEAD,64,112,72,14,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "文件头长度",IDC_STATIC,13,100,197,33
+    LTEXT           "大小(S):",IDC_STATIC,27,115,33,8
+    LTEXT           "字节",IDC_STATIC,141,115,17,8
+END
+
+IDD_DIALOG_SELCHANNEL DIALOG 0, 0, 187, 73
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择采集通道"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_CHANNEL,113,18,62,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_CHANNEL,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,163,15,11,14
+    DEFPUSHBUTTON   "确定",IDOK,77,52,50,14
+    PUSHBUTTON      "取消",IDCANCEL,130,52,50,14
+    GROUPBOX        "",IDC_STATIC,7,2,173,44
+    LTEXT           "选择当前使用的采集通道：",IDC_STATIC,13,21,97,8
+END
+
+IDD_DIALOG_GRADUATIONX DIALOG 0, 0, 421, 12
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "宋体"
+BEGIN
+END
+
+IDD_DIALOG_GRADUATIONY DIALOG 0, 0, 14, 352
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "宋体"
+BEGIN
+END
+
+IDD_DIALOG_PHYDIST DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,72,72,50,14
+    PUSHBUTTON      "取消",IDCANCEL,126,72,50,14
+    LTEXT           "物理距离（毫米）：",IDC_STATIC,12,30,72,8
+    EDITTEXT        IDC_EDIT_DISTANCE,90,27,40,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_SETSQUARE DIALOGEX 0, 0, 151, 188
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,86,159,50,14
+    CONTROL         "移动红色矩形框",IDC_CHECK_MOVESSQUARE,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,24,15,83,9
+    EDITTEXT        IDC_EDIT_SQUAREWIDTH,86,104,41,12,ES_AUTOHSCROLL
+    LTEXT           "红色矩形框长度",IDC_STATIC,22,106,57,11
+    LTEXT           "绿色矩形框长度",IDC_STATIC,22,133,57,11
+    EDITTEXT        IDC_EDIT_SQUAREHEIGHT,86,130,41,12,ES_AUTOHSCROLL
+    CONTROL         "显示红色矩形框",IDC_CHECK_SHOWREDSQUARE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,37,83,9
+    CONTROL         "显示绿色矩形框",IDC_CHECK_SHOWGREENSQUARE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,59,83,9
+    GROUPBOX        "",IDC_STATIC,17,28,82,69
+    CONTROL         "显示蓝色矩形框",IDC_CHECK_SHOWBLUESQUARE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,78,83,9
+    GROUPBOX        "",IDC_STATIC,17,99,116,55
+END
+
+IDD_DIALOG_IMAGESIZE DIALOGEX 0, 0, 203, 114
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图像尺寸"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,37,93,50,14
+    PUSHBUTTON      "取消",IDCANCEL,112,93,50,14
+    CONTROL         "1600×1500",IDC_RADIO_SIZE_640_640,"Button",BS_AUTORADIOBUTTON | WS_GROUP,20,15,44,10
+    CONTROL         "440×440",IDC_RADIO_SIZE_440_440,"Button",BS_AUTORADIOBUTTON,20,33,45,10
+    CONTROL         "256×360",IDC_RADIO_SIZE_256_360,"Button",BS_AUTORADIOBUTTON,20,52,45,10
+    CONTROL         "自定义",IDC_RADIO_SIZE_CONFIG,"Button",BS_AUTORADIOBUTTON,20,72,40,10
+    EDITTEXT        IDC_EDIT_SIZE_WIDTH,94,71,40,14,ES_AUTOHSCROLL
+    LTEXT           "×",IDC_STATIC,135,74,8,8
+    EDITTEXT        IDC_EDIT_SIZE_LENGTH,144,70,40,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_SETSERIALNO DIALOGEX 0, 0, 305, 94
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,197,73,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,248,73,50,14
+    LTEXT           "请输入想要调用的指纹仪串口号：",IDC_STATIC_WARN,20,36,133,11
+    EDITTEXT        IDC_EDIT_SERIALNO,147,33,50,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,2,0,3
+ PRODUCTVERSION 6,2,0,3
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "北京东方金指科技有限公司"
+            VALUE "FileDescription", "公安部活体指纹图像采集、拼接应用程序接口规范测试程序"
+            VALUE "FileVersion", "6.2.0.3"
+            VALUE "InternalName", "GflsScanerTest"
+            VALUE "LegalCopyright", "版权所有 (C) 2002-2009 北京东方金指科技有限公司"
+            VALUE "OriginalFilename", "GflsScanerTest.EXE"
+            VALUE "ProductName", "北京东方金指指纹自动识别系统GAFIS6.2"
+            VALUE "ProductVersion", "6.2.0.3"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG_IMAGEINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 339
+    END
+
+    IDD_CHECKTOOL_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_DIALOG_CHECKTOOL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 456
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 358
+    END
+
+    IDD_DIALOG_GRAYSTAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_DIALOG_TOPBAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 736
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_DIALOG_ABBRANCEBAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 700
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_DIALOG_STDCHKBAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 663
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 35
+    END
+
+    IDD_STDCHK_CAPTSPEED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 125
+    END
+
+    IDD_DIALOG_CAPTIMAGES2SAVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 121
+    END
+
+    IDD_DIALOG_GRAYRAWOPT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_DIALOG_SELCHANNEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_DIALOG_GRADUATIONX, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_GRADUATIONY, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_PHYDIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_DIALOG_SETSQUARE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 180
+    END
+
+    IDD_DIALOG_IMAGESIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_DIALOG_SETSERIALNO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR                  "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "GflsScanerTest\n\nGflsSc\n\n\nGflsScanerTest.Document\nGflsSc Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "GflsScanerTest"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+STRINGTABLE
+BEGIN
+    ID_STDCHK_OPTICSDEVICE  "光学硬件检测\n光学硬件检测"
+    ID_STDCHK_CAPTURESIZE   "采集窗口尺寸检测\n采集窗口尺寸检测"
+    ID_STDCHK_VALIDIMAGESIZE "有效图像尺寸检测\n有效图像尺寸检测"
+    ID_STDCHK_IMAGEPIXELCOUNT "图像像素数检测\n图像像素数检测"
+    ID_STDCHK_CENTERDIFF    "图像中心偏差检测\n图像中心偏差检测"
+    ID_STDCHK_IMGRESOLUTION "图像分辨率检测\n图像分辨率检测"
+    ID_STDCHK_IMGABERRANCE  "使用TP-F02产生的进行畸变检测\n畸变检测"
+    ID_STDCHK_IMGBACKGRAYAVERAGE "图像背景灰度值检测\n背景灰度值检测"
+    ID_STDCHK_IMGBACKGRAYUNAVE "检测图像背景灰度不均匀度\n不均匀度检测"
+    ID_STDCHK_IMGCENTERGRAY "检测中心区域图像灰度值\n中心区域灰度值检测"
+    ID_STDCHK_IMGGRAYVARIAN "检测灰度动态范围\n灰度动态范围检测"
+    ID_STDCHK_IMGBADPOINT   "检测背景图像疵点\n疵点检测"
+    ID_STDCHK_ENVIRONMENT   "检测环境光\n环境光检测"
+END
+
+STRINGTABLE
+BEGIN
+    ID_STDCHK_IMGPARSE      "检测图像的解析度\n解析度检测"
+    ID_STDCHK_CAPTSPEED     "检测采集速率\n采集速率检测"
+    ID_STDCHK_CAPTIMAGESTOSAVE "把连续采集到的图像存储为系列图像文件\n把采集的图像存为系列文件"
+    ID_LOAD_LIVECAPTDLL     "装载采集动态库\n装载采集动态库"
+    ID_LOAD_MOSAICDLL       "装载拼接动态库\n装载拼接动态库"
+    ID_SCANNER_INITLIVECAPT "初始化采集仪\n初始化采集仪"
+    ID_SCANNER_SELECTCHANNEL "选择进行图像采集的采集通道\n选择采集通道"
+END
+
+STRINGTABLE
+BEGIN
+    ID_MENUITEM32805        "采集并拼接滚动指纹\n采集并拼接滚动指纹"
+    ID_MOSAIC_ROLL1FINGER   "只支持上下滚动"
+    ID_MOSAIC_ROLL2FINGER   "只支持左右滚动"
+    ID_MOSAIC_ROLL3FINGER   "支持上下左右滚动"
+    ID_MOSAIC_PLAINFINGER   "采集并拼接平面指纹\n采集并拼接平面指纹"
+    ID_SCANNER_INITLIVECAPT2 "初始化采集仪1\n初始化采集仪1"
+    ID_SCANNER_INITLIVECAPT1 "初始化采集仪2\n初始化采集仪2"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SEPARATOR            "初始化采集仪1\n初始化采集仪"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 西班牙语 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+LANGUAGE LANG_SPANISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,2,0,1
+ PRODUCTVERSION 6,2,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000a04b0"
+        BEGIN
+            VALUE "CompanyName", "Golden Finger Systems Inc."
+            VALUE "FileDescription", "GflsScanerTest"
+            VALUE "FileVersion", "6, 2, 0, 1"
+            VALUE "InternalName", "GflsScanerTest"
+            VALUE "LegalCopyright", "Copyfight (C) 2002-2009 Golden Finger Systems Inc."
+            VALUE "OriginalFilename", "GflsScanerTest.EXE"
+            VALUE "ProductName", "Golden Finger Systems Inc. GAFIS6.2"
+            VALUE "ProductVersion", "6, 2, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0xa, 1200
+    END
+END
+
+#endif    // 西班牙语 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,2,0,2
+ PRODUCTVERSION 6,2,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000904b0"
+        BEGIN
+            VALUE "CompanyName", "Golden Finger Systems Inc."
+            VALUE "FileDescription", "GflsScanerTest"
+            VALUE "FileVersion", "6.2.0.2"
+            VALUE "InternalName", "GflsScanerTest"
+            VALUE "LegalCopyright", "Copyfight (C) 2002-2009 Golden Finger Systems Inc."
+            VALUE "OriginalFilename", "GflsScanerTest.EXE"
+            VALUE "ProductName", "Golden Finger Systems Inc. GAFIS6.2"
+            VALUE "ProductVersion", "6, 2, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x9, 1200
+    END
+END
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\GflsScanerTest.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

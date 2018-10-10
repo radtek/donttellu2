@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1430372564 source:/home/bluev/MyCode/videoclientlib/netcli.c
+	"netcli.h"
+
+1430373819 /home/bluev/MyCode/videoclientlib/netcli.h
+	<stdio.h>
+	<unistd.h>
+	<stdlib.h>
+	<sys/socket.h>
+	<sys/stat.h>
+	<arpa/inet.h>
+	<string.h>
+	<pthread.h>
+	<sys/select.h>
+	<errno.h>
+	"flags.h"
+
+1431507963 /home/bluev/MyCode/videoclientlib/flags.h
+
+1430358548 source:/home/bluev/MyCode/videoclientlib/show.c
+	"show.h"
+
+1430298311 /home/bluev/MyCode/videoclientlib/show.h
+	"flags.h"
+

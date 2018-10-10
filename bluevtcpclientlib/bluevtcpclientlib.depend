@@ -1,0 +1,77 @@
+# depslib dependency file v1.0
+1430273485 source:/home/bluev/MyCode/bluevtcpclientlib/base64.c
+	"base64.h"
+
+1430273572 /home/bluev/MyCode/bluevtcpclientlib/base64.h
+	<stdlib.h>
+	<memory.h>
+
+1423104345 /home/bluev/MyCode/bluevtcpclientlib/P2PSocket.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<arpa/inet.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<net/if_arp.h>
+	<net/if.h>
+	<net/route.h>
+	<sys/ioctl.h>
+	<pthread.h>
+	<linux/rtnetlink.h>
+	<netinet/in.h>
+	<netdb.h>
+	<errno.h>
+
+1421996754 source:/home/bluev/MyCode/bluevtcpclientlib/cJSON.c
+	<string.h>
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<float.h>
+	<limits.h>
+	<ctype.h>
+	"cJSON.h"
+
+1421996754 /home/bluev/MyCode/bluevtcpclientlib/cJSON.h
+
+1431411075 source:/home/bluev/MyCode/bluevtcpclientlib/TCPSocket.c
+	"TCPSocket.h"
+	"base64.h"
+	"cJSON.h"
+
+1431316433 /home/bluev/MyCode/bluevtcpclientlib/TCPSocket.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<arpa/inet.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<net/if_arp.h>
+	<net/if.h>
+	<net/route.h>
+	<sys/ioctl.h>
+	<pthread.h>
+	<netinet/in.h>
+	<netdb.h>
+	<errno.h>
+	<sys/time.h>
+	"bluevtcpclientlib.h"
+
+1431316367 /home/bluev/MyCode/bluevtcpclientlib/bluevtcpclientlib.h
+
+1431323548 source:/home/bluev/MyCode/bluevtcpclientlib/bluevtcpclientlib.c
+	<string.h>
+	<unistd.h>
+	<net/if.h>
+	<sys/ioctl.h>
+	<arpa/inet.h>
+	<linux/rtnetlink.h>
+	<netinet/in.h>
+	<netdb.h>
+	"cJSON.h"
+	"bluevtcpclientlib.h"
+	"TCPSocket.h"
+

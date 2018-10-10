@@ -1,0 +1,122 @@
+# depslib dependency file v1.0
+1426736239 source:/home/bluev/MyCode/upnpctrlpointlib/sample_util.c
+	"sample_util.h"
+	<stdarg.h>
+	<stdio.h>
+	"tv_ctrlpt.h"
+
+1426602813 /home/bluev/MyCode/upnpctrlpointlib/sample_util.h
+	"ithread.h"
+	"ixml.h"
+	"upnp.h"
+	"upnptools.h"
+	<stdlib.h>
+	<string.h>
+
+1384530602 /home/bluev/MyCode/libupnp-1.6.19/threadutil/inc/ithread.h
+	<sys/param.h>
+	"UpnpGlobal.h"
+	"UpnpUniStd.h"
+	<pthread.h>
+
+1301799036 /home/bluev/MyCode/libupnp-1.6.19/upnp/inc/UpnpGlobal.h
+
+1293135846 /home/bluev/MyCode/libupnp-1.6.19/upnp/inc/UpnpUniStd.h
+	<unistd.h>
+
+1384531295 /home/bluev/MyCode/libupnp-1.6.19/ixml/inc/ixml.h
+	"UpnpGlobal.h"
+	<objc/objc.h>
+
+1384531295 /home/bluev/MyCode/libupnp-1.6.19/upnp/inc/upnp.h
+	"ixml.h"
+	"upnpconfig.h"
+	"UpnpGlobal.h"
+	"UpnpInet.h"
+	<time.h>
+	<sys/types.h>
+	<time.h>
+	"ActionComplete.h"
+	"ActionRequest.h"
+	"Discovery.h"
+	"Event.h"
+	"EventSubscribe.h"
+	"FileInfo.h"
+	"StateVarComplete.h"
+	"StateVarRequest.h"
+	"SubscriptionRequest.h"
+
+1424850013 /home/bluev/MyCode/libupnp-1.6.19/upnp/inc/upnpconfig.h
+
+1332780582 /home/bluev/MyCode/libupnp-1.6.19/upnp/inc/UpnpInet.h
+	"UpnpUniStd.h"
+	<stdarg.h>
+	<winbase.h>
+	<windef.h>
+	<winsock2.h>
+	<iphlpapi.h>
+	<ws2tcpip.h>
+	<sys/param.h>
+	<fcntl.h>
+	<sys/sockio.h>
+	<ifaddrs.h>
+	<sys/socket.h>
+	<arpa/inet.h>
+	<net/if.h>
+	<netinet/in.h>
+
+1319930014 /home/bluev/MyCode/libupnp-1.6.19/upnp/inc/upnptools.h
+	"ixml.h"
+	"upnpconfig.h"
+
+1426580497 source:/home/bluev/MyCode/upnpctrlpointlib/tv_ctrlpt.c
+	"tv_ctrlpt.h"
+	"upnp.h"
+
+1426594858 /home/bluev/MyCode/upnpctrlpointlib/tv_ctrlpt.h
+	"sample_util.h"
+	"upnp.h"
+	"UpnpString.h"
+	"upnptools.h"
+	<signal.h>
+	<stdarg.h>
+	<stdio.h>
+
+1293135846 /home/bluev/MyCode/libupnp-1.6.19/upnp/inc/UpnpString.h
+	"UpnpGlobal.h"
+	<stdlib.h>
+
+1430296703 source:/home/bluev/MyCode/upnpctrlpointlib/upnpctrlpoint.c
+	"upnp.h"
+	"upnpdebug.h"
+	"sample_util.h"
+	"tv_ctrlpt.h"
+	"upnpctrlpoint.h"
+
+1430811087 /home/bluev/MyCode/upnpctrlpointlib/upnpctrlpoint.h
+
+1297125820 /home/bluev/MyCode/libupnp-1.6.19/upnp/inc/upnpdebug.h
+	"ThreadPool.h"
+	"upnpconfig.h"
+	"UpnpGlobal.h"
+	<stdio.h>
+
+1332780582 /home/bluev/MyCode/libupnp-1.6.19/threadutil/inc/ThreadPool.h
+	"FreeList.h"
+	"ithread.h"
+	"LinkedList.h"
+	"UpnpInet.h"
+	"UpnpGlobal.h"
+	<errno.h>
+	<time.h>
+	<sys/param.h>
+	<sys/time.h>
+	<sys/resource.h>
+
+1293135845 /home/bluev/MyCode/libupnp-1.6.19/threadutil/inc/FreeList.h
+	"ithread.h"
+	<errno.h>
+
+1293135845 /home/bluev/MyCode/libupnp-1.6.19/threadutil/inc/LinkedList.h
+	"FreeList.h"
+

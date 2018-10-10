@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="bluevp2pclientlib" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/bluevp2pclientlib" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-lpthread" />
+				</Compiler>
+				<Linker>
+					<Add option="-lpthread" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/bluevp2pclientlib" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lpthread" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Common.h" />
+		<Unit filename="Configuration.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Configuration.h" />
+		<Unit filename="DataPool.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DataPool.h" />
+		<Unit filename="DeviceBridge.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DeviceBridge.h" />
+		<Unit filename="NetSocket.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="NetSocket.h" />
+		<Unit filename="P2PSocket.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="P2PSocket.h" />
+		<Unit filename="base64.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="base64.h" />
+		<Unit filename="cJSON.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cJSON.h" />
+		<Unit filename="configuration.conf" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

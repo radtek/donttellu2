@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1431308367 source:/home/bluev/MyCode/bluevtcpclient/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<net/if.h>
+	<sys/ioctl.h>
+	<arpa/inet.h>
+	"bluevtcpclientlib.h"
+
+1430984951 /home/bluev/MyCode/bluevtcpclientlib/bluevtcpclientlib.h
+

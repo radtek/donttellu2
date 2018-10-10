@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1430287124 source:/home/bluev/MyCode/videoserver/enet.c
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/stat.h>
+	<sys/un.h>
+	<netinet/in.h>
+	<netinet/tcp.h>
+	<arpa/inet.h>
+	<unistd.h>
+	<fcntl.h>
+	<string.h>
+	<netdb.h>
+	<errno.h>
+	<stdarg.h>
+	<stdio.h>
+	"enet.h"
+
+1430287124 /home/bluev/MyCode/videoserver/enet.h
+
+1430287124 source:/home/bluev/MyCode/videoserver/ev.c
+	<stdio.h>
+	<sys/time.h>
+	<sys/types.h>
+	<sys/epoll.h>
+	<unistd.h>
+	<stdlib.h>
+	<poll.h>
+	<string.h>
+	<time.h>
+	<errno.h>
+	"ev.h"
+
+1430287124 /home/bluev/MyCode/videoserver/ev.h
+	<time.h>
+	<stdlib.h>
+
+1430364961 source:/home/bluev/MyCode/videoserver/videoread.c
+	<stdio.h>
+	<stdlib.h>
+	<stdint.h>
+	<string.h>
+
+1431331131 source:/home/bluev/MyCode/videoserver/server.c
+	<stdio.h>
+	<unistd.h>
+	<errno.h>
+	<stdint.h>
+	<string.h>
+	<arpa/inet.h>
+	<pthread.h>
+	"enet.h"
+	"ev.h"
+	"flags.h"
+	"bluevtcpclientlib.h"
+	"upnpctrlpoint.h"
+
+1430366442 /home/bluev/MyCode/videoserver/flags.h
+
+1431316367 /home/bluev/MyCode/bluevtcpclientlib/bluevtcpclientlib.h
+
+1430811087 /home/bluev/MyCode/upnpctrlpointlib/upnpctrlpoint.h
+

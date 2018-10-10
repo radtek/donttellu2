@@ -1,0 +1,46 @@
+;LIBRARY
+
+EXPORTS
+    ; Explicit exports can go here  
+	
+	GFS_DEVICE_Init
+	GFS_DEVICE_Close
+	GFS_DEVICE_GetID
+
+	GFS_DEVICE_IsSupportSetup
+	GFS_DEVICE_Setup
+
+	GFS_DEVICE_GetVersion
+	GFS_DEVICE_GetDesc
+	GFS_DEVICE_GetErrorInfo
+	
+	GFS_DEVICE_GetChannelCount
+	GFS_DEVICE_GetImagePropInfo
+
+	GFS_DEVICE_SetBright
+	GFS_DEVICE_SetContrast
+	GFS_DEVICE_GetBright
+	GFS_DEVICE_GetContrast
+
+	GFS_DEVICE_GetCaptWindow
+	GFS_DEVICE_IsSupportCaptWindow
+	GFS_DEVICE_GetCaptWndType
+	GFS_DEVICE_SetCaptWindow
+	
+	GFS_DEVICE_StartAcquisition
+	GFS_DEVICE_BeginCapture
+	GFS_DEVICE_GetRawData
+	GFS_DEVICE_EndCapture
+	GFS_DEVICE_StopAcquisition
+
+	GFS_DEVICE_IsSupportPreview
+	GFS_DEVICE_GetPreviewImageSize
+	GFS_DEVICE_GetPreviewData
+
+	GFS_DEVICE_SetVideoWindow
+	GFS_DEVICE_StartVideo
+	GFS_DEVICE_StopVideo
+
+
+
+	

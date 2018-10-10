@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1426736990 source:/home/bluev/MyCode/upnpctrlpoint/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<net/if.h>
+	<sys/ioctl.h>
+	<arpa/inet.h>
+	"upnpctrlpoint.h"
+
+1430811087 /home/bluev/MyCode/upnpctrlpointlib/upnpctrlpoint.h
+

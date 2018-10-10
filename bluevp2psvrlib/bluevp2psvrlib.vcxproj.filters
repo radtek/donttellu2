@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bluevp2psvrmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="udpserver.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ServiceMgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UDPP2PService.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPServer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainService.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="bluevutil.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPService.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPP2PService.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UDPServerEx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BluevError.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPChatService.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPServerEx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IOCPServer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPServerWrapper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UDPServerWrapper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IOCPServerEx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bluevp2psvrapidef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bluevp2psvrdef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bluevp2psvrmain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="udpservice.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="udpserver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IService.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bluevreqans.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IServiceMgr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ServiceMgr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IServiceStatus.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="netreqans.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UDPP2PService.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ILocker.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketHelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BLUEVConnection.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPServer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IRunnable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainService.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bluevutil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPService.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPP2PService.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UDPServerEx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BluevError.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPChatService.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPServerEx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IOCPServer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IServerWrapper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPServerWrapper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UDPServerWrapper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IServerArgs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IOCPServerEx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

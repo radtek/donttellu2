@@ -1,0 +1,50 @@
+// DRFPTUploader.idl : ActiveX 控件项目的类型库源。
+
+// 此文件将由 MIDL 编译器工具处理以
+// 产生类型库(DRFPTUploader.tlb)，该类型库将成为
+// DRFPTUploader.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(DEE71F0C-7228-4CF0-AA2A-1A0FDF48A6BF), version(1.0),
+  control ]
+library DRFPTUploaderLib
+{
+	importlib(STDOLE_TLB);
+
+	//  CDRFPTUploaderCtrl 的主调度接口
+	[ 
+		uuid(C454ABFE-8C51-467B-AE7B-067BD455DFA1)	
+	]
+	dispinterface _DDRFPTUploader
+	{
+		properties:
+		methods:
+			[id(1)] LONG SelectFile(LONG nOption);
+	};
+
+	//  CDRFPTUploaderCtrl 的事件调度接口
+
+	[ 
+		uuid(F1C79621-7334-419B-9D06-0A5A8D9C25B4)	
+	]
+	dispinterface _DDRFPTUploaderEvents
+	{
+		properties:
+			//  事件接口没有任何属性
+
+		methods:
+	};
+
+	//  CDRFPTUploaderCtrl 的类信息
+	[
+		uuid(063F1676-5D24-419A-95C4-611878631779)
+	]
+	coclass DRFPTUploader
+	{
+		[default] dispinterface _DDRFPTUploader;
+		[default, source] dispinterface _DDRFPTUploaderEvents;
+	};
+
+};

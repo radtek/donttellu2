@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="svrhead">
+      <UniqueIdentifier>{dffb8542-17c7-4d6e-b116-46e806800201}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="p2pclientmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UDPP2PClient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UDPP2PClientService.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPClient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bluevp2pclientapidef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bluevp2pclientdef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UDPP2PClient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UDPP2PClientService.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bluevp2pclientmain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bluevp2psvrlib\BLUEVConnection.h">
+      <Filter>svrhead</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bluevp2psvrlib\udpservice.h">
+      <Filter>svrhead</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bluevp2psvrlib\bluevp2psvrapidef.h">
+      <Filter>svrhead</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bluevp2psvrlib\bluevp2psvrdef.h">
+      <Filter>svrhead</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bluevp2psvrlib\bluevp2psvrmain.h">
+      <Filter>svrhead</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bluevp2psvrlib\bluevreqans.h">
+      <Filter>svrhead</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bluevp2psvrlib\ILocker.h">
+      <Filter>svrhead</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bluevp2psvrlib\IService.h">
+      <Filter>svrhead</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bluevp2psvrlib\IServiceMgr.h">
+      <Filter>svrhead</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bluevp2psvrlib\IServiceStatus.h">
+      <Filter>svrhead</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bluevp2psvrlib\netreqans.h">
+      <Filter>svrhead</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bluevp2psvrlib\ServiceMgr.h">
+      <Filter>svrhead</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bluevp2psvrlib\SocketHelper.h">
+      <Filter>svrhead</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bluevp2psvrlib\UDPP2PService.h">
+      <Filter>svrhead</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bluevp2psvrlib\udpserver.h">
+      <Filter>svrhead</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bluevp2psvrlib\bluevutil.h">
+      <Filter>svrhead</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPClient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

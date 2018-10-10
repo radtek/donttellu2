@@ -1,0 +1,38 @@
+;LIBRARY	"InfisA5K1901"
+
+
+EXPORTS
+    ; Explicit exports can go here
+	LIVESCAN_Init							@1    
+	LIVESCAN_Close							@2
+	LIVESCAN_GetChannelCount				@3
+	LIVESCAN_SetBright						@4
+	LIVESCAN_SetContrast					@5
+	LIVESCAN_GetBright						@6
+	LIVESCAN_GetContrast					@7
+	LIVESCAN_GetMaxImageSize				@8
+	LIVESCAN_GetCaptWindow					@9
+	LIVESCAN_SetCaptWindow					@10	
+	LIVESCAN_Setup							@11
+	LIVESCAN_BeginCapture					@12
+	LIVESCAN_GetFPRawData					@13	
+	LIVESCAN_GetFPBmpData					@14
+	LIVESCAN_EndCapture					    @15
+	LIVESCAN_IsSupportCaptWindow			@16
+	LIVESCAN_IsSupportSetup				    @17
+	LIVESCAN_GetVersion					    @18
+	LIVESCAN_GetDesc						@19
+	LIVESCAN_GetErrorInfo					@20	
+	LIVESCAN_SetBufferEmpty					@21	
+	LIVESCAN_GetSerialNo					@22
+	LIVESCAN_InitEx							@23
+	LIVESCAN_SetSerialNo					@24
+	LIVESCAN_SetBlackBalance				@25
+	LIVESCAN_GetBlackBalance				@26
+
+
+
+	
+	
+
+

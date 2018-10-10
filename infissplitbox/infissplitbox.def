@@ -1,0 +1,4 @@
+;LIBRARY      "infissplitbox"
+
+EXPORTS
+    INFIS_CutImage

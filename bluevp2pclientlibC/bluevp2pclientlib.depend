@@ -1,0 +1,179 @@
+# depslib dependency file v1.0
+1420704054 source:/home/bluev/MyCode/bluevp2pclientlib/base64.c
+	"base64.h"
+	"P2PSocket.h"
+
+1420703023 /home/bluev/MyCode/bluevp2pclientlib/base64.h
+
+1421040024 /home/bluev/MyCode/bluevp2pclientlib/P2PSocket.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<arpa/inet.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<net/if_arp.h>
+	<net/if.h>
+	<net/route.h>
+	<sys/ioctl.h>
+	<pthread.h>
+	<linux/rtnetlink.h>
+	<netinet/in.h>
+	<netdb.h>
+
+1376898412 source:/home/bluev/MyCode/bluevp2pclientlib/cJSON.c
+	<string.h>
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<float.h>
+	<limits.h>
+	<ctype.h>
+	"cJSON.h"
+
+1376459676 /home/bluev/MyCode/bluevp2pclientlib/cJSON.h
+
+1421050558 source:/home/bluev/MyCode/bluevp2pclientlib/main.c
+	"NetSocket.h"
+	<time.h>
+	"P2PSocket.h"
+
+1421050537 /home/bluev/MyCode/bluevp2pclientlib/NetSocket.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<arpa/inet.h>
+
+1421116514 source:/home/bluev/MyCode/bluevp2pclientlib/NetSocket.c
+	"NetSocket.h"
+	"cJSON.h"
+	<sys/types.h>
+	<sys/socket.h>
+	<net/if_arp.h>
+	<net/if.h>
+	<net/route.h>
+	<sys/ioctl.h>
+	<pthread.h>
+	<linux/rtnetlink.h>
+	<netinet/in.h>
+	<netdb.h>
+
+1421057844 source:/home/bluev/MyCode/bluevp2pclientlib/P2PSocket.c
+	"P2PSocket.h"
+	"NetSocket.h"
+	"base64.h"
+	"cJSON.h"
+
+1421378209 source:/home/bluev/MyCode/bluevp2pclientForCodeBlocks/base64.c
+	"base64.h"
+	"P2PSocket.h"
+
+1421378209 /home/bluev/MyCode/bluevp2pclientForCodeBlocks/base64.h
+
+1430373473 /home/bluev/MyCode/bluevp2pclientForCodeBlocks/P2PSocket.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<arpa/inet.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<net/if_arp.h>
+	<net/if.h>
+	<net/route.h>
+	<sys/ioctl.h>
+	<pthread.h>
+	<linux/rtnetlink.h>
+	<netinet/in.h>
+	<netdb.h>
+	<errno.h>
+
+1421378209 source:/home/bluev/MyCode/bluevp2pclientForCodeBlocks/cJSON.c
+	<string.h>
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<float.h>
+	<limits.h>
+	<ctype.h>
+	"cJSON.h"
+
+1421378209 /home/bluev/MyCode/bluevp2pclientForCodeBlocks/cJSON.h
+
+1421826999 source:/home/bluev/MyCode/bluevp2pclientForCodeBlocks/main.c
+	"NetSocket.h"
+	<time.h>
+	"P2PSocket.h"
+	"DeviceBridge.h"
+	"DataPool.h"
+	"Configuration.h"
+
+1421826999 /home/bluev/MyCode/bluevp2pclientForCodeBlocks/NetSocket.h
+	"Common.h"
+
+1421826999 source:/home/bluev/MyCode/bluevp2pclientForCodeBlocks/NetSocket.c
+	"NetSocket.h"
+	"cJSON.h"
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/ioctl.h>
+	<net/if.h>
+	<netinet/in.h>
+	<net/if_arp.h>
+	<pthread.h>
+
+1430373439 source:/home/bluev/MyCode/bluevp2pclientForCodeBlocks/P2PSocket.c
+	"P2PSocket.h"
+	"NetSocket.h"
+	"base64.h"
+	"cJSON.h"
+
+1421826999 source:/home/bluev/MyCode/bluevp2pclientForCodeBlocks/Configuration.c
+	"Configuration.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1421826999 /home/bluev/MyCode/bluevp2pclientForCodeBlocks/Configuration.h
+
+1421826999 source:/home/bluev/MyCode/bluevp2pclientForCodeBlocks/DataPool.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<pthread.h>
+	"DataPool.h"
+	"Common.h"
+	<semaphore.h>
+	"NetSocket.h"
+
+1421826999 /home/bluev/MyCode/bluevp2pclientForCodeBlocks/DataPool.h
+	"Common.h"
+	<netinet/in.h>
+
+1421826999 /home/bluev/MyCode/bluevp2pclientForCodeBlocks/Common.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<arpa/inet.h>
+
+1421826999 source:/home/bluev/MyCode/bluevp2pclientForCodeBlocks/DeviceBridge.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<termios.h>
+	<unistd.h>
+	<errno.h>
+	"DeviceBridge.h"
+	"NetSocket.h"
+	"DataPool.h"
+
+1421826999 /home/bluev/MyCode/bluevp2pclientForCodeBlocks/DeviceBridge.h
+	"Common.h"
+

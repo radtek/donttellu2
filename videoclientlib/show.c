@@ -1,0 +1,98 @@
+#include "show.h"
+
+#define HINT(X) {X,  #X}
+struct macrohint {
+	int value;
+	char *hint;
+};
+
+static char *unknown = "Unknown";
+
+struct macrohint cmds[] = {
+	HINT(CMD_LIGHT_ON),
+	HINT(CMD_LIGHT_OFF),
+	HINT(CMD_LIGHT_BRIGHT),
+	HINT(CMD_SCENE_LEAVE),
+	HINT(CMD_SCENE_BACK),
+	HINT(CMD_SCENE_DINNER),
+	HINT(CMD_SCENE_MOVIE),
+	HINT(CMD_SCENE_PARTY),
+	HINT(CMD_SCENE_SLEEP),
+	HINT(CMD_CAMERA_PLAY),
+	HINT(CMD_CAMERA_STOP),
+	HINT(CMD_CURTAIN_OPEN),
+	HINT(CMD_CURTAIN_CLOSE),
+	HINT(CMD_CURTAIN_MIDDLE),
+	HINT(CMD_WINDOW_OPEN),
+	HINT(CMD_WINDOW_CLOSE),
+	HINT(CMD_WINDOW_MIDDLE),
+	HINT(CMD_GLASS_OPACITY),
+	HINT(CMD_PROJECTOR_ON),
+	HINT(CMD_PROJECTOR_OFF),
+	HINT(CMD_ROBOT_FORWARD),
+	HINT(CMD_ROBOT_BACKWARD),
+	HINT(CMD_ROBOT_TURNLEFT),
+	HINT(CMD_ROBOT_TURNRIGHT),
+	HINT(CMD_ROBOT_STOP),
+	HINT(CMD_THEATRE_DVD),
+	HINT(CMD_THEATRE_STB),
+	HINT(CMD_THEATRE_CAMERA),
+	HINT(CMD_GET_STATUS),
+	HINT(CMD_SEND_FRAME),
+	HINT(CMD_SENSOR_TEMP),
+	HINT(CMD_SENSOR_HUMI),
+	HINT(CMD_SENSOR_PM25),
+	HINT(CMD_SENSOR_CO),
+	HINT(CMD_SENSOR_DOOR),
+	HINT(CMD_SENSOR_WIN),
+	HINT(CMD_SENSOR_SMOKE),
+	HINT(CMD_SENSOR_HUMAN),
+	HINT(CMD_SENSOR_BRIGHT),
+};
+
+struct macrohint types[] = {
+	HINT(DEV_TYPE_SCENE),
+	HINT(DEV_TYPE_LIGHT),
+	HINT(DEV_TYPE_CAMERA),
+	HINT(DEV_TYPE_CURTAIN),
+	HINT(DEV_TYPE_WINDOW),
+	HINT(DEV_TYPE_GLASS),
+	HINT(DEV_TYPE_PROJECTOR),
+	HINT(DEV_TYPE_ROBOT),
+	HINT(DEV_TYPE_DVD),
+	HINT(DEV_TYPE_STB),
+	HINT(DEV_TYPE_THEATRE),
+	HINT(DEV_TYPE_SENSOR_TEMP),
+	HINT(DEV_TYPE_SENSOR_HUMI),
+	HINT(DEV_TYPE_SENSOR_PM25),
+	HINT(DEV_TYPE_SENSOR_CO),
+	HINT(DEV_TYPE_SENSOR_DOOR),
+	HINT(DEV_TYPE_SENSOR_WINDOW),
+	HINT(DEV_TYPE_SENSOR_SMOKE),
+	HINT(DEV_TYPE_SENSOR_HUMAN),
+	HINT(DEV_TYPE_SENSOR_BRIGHT)
+};
+
+char *showcmd(int cmd)
+{
+	int i, count;
+	count = (int) (sizeof(cmds)/sizeof(struct macrohint));
+
+	for (i = 0; i < count; i++)
+		if (cmds[i].value == cmd) {
+			return cmds[i].hint;
+		}
+	return unknown;
+}
+
+char *showtype(int type)
+{
+	int i, count;
+	count = (int) (sizeof(types)/sizeof(struct macrohint));
+
+	for (i = 0; i < count; i++)
+		if (types[i].value == type) {
+			return types[i].hint;
+		}
+	return unknown;
+}

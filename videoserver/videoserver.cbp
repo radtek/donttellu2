@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="videoserver" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/videoserver" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../bluevtcpclientlib" />
+					<Add directory="../upnpctrlpointlib" />
+				</Compiler>
+				<Linker>
+					<Add option="-lbluevtcpclientlib" />
+					<Add option="-lupnpctrlpointlib" />
+					<Add option="-lpthread" />
+					<Add directory="../bluevtcpclientlib/bin/Debug" />
+					<Add directory="../upnpctrlpointlib/bin/Debug" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/videoserver" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="enet.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="enet.h" />
+		<Unit filename="ev.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ev.h" />
+		<Unit filename="flags.h" />
+		<Unit filename="server.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="videoread.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
