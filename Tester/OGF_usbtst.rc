@@ -1,0 +1,268 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\OGF_usbtst.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\OGF_usbtst.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 OGF_usbtst"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "OGF_usbtst 1.0.0.3 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 海天视觉(北京)科技有限公司 2015",IDC_STATIC,40,25,177,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_OGF_USBTST_DIALOG DIALOGEX 0, 0, 472, 569
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_WINDOWEDGE | WS_EX_APPWINDOW
+CAPTION "USB2.0采集仪演示系统"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "取消",IDCANCEL,398,525,59,22
+    DEFPUSHBUTTON   "采图",IDC_CAPTURE,331,487,59,22
+    DEFPUSHBUTTON   "保存",IDC_SAVE,332,525,59,22
+    CONTROL         "",IDC_VIEW,"Static",SS_WHITERECT | SS_SUNKEN,4,7,449,400
+    LTEXT           "地址(Hex)",IDC_STATIC,14,543,41,8
+    EDITTEXT        IDC_REGISTER,63,543,37,12,ES_AUTOHSCROLL
+    LTEXT           "值(Hex)",IDC_STATIC,110,543,29,8
+    EDITTEXT        IDC_VALUE,142,543,45,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "设置",IDC_SETREG,203,539,37,16
+    CONTROL         "Slider1",IDC_SLIDER_GAIN,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,62,435,128,12
+    CONTROL         "Slider2",IDC_SLIDER_EXP,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,62,450,128,12
+    LTEXT           "设备型号：",IDC_STATIC,203,418,41,8
+    LTEXT           "",IDC_STATIC_CAMTYPE,247,419,68,8
+    LTEXT           "图像尺寸：",IDC_STATIC,15,466,41,8
+    COMBOBOX        IDC_COMBO_WINDOWSIZE,59,466,128,83,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "对比度：",IDC_STATIC,15,435,41,8
+    LTEXT           "亮度：",IDC_STATIC,15,450,41,8
+    EDITTEXT        IDC_EDIT_GAIN,202,435,27,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_EXP,202,450,29,14,ES_AUTOHSCROLL
+    CONTROL         "反色",IDC_CHECK_REVERSE,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,343,418,32,10
+    COMBOBOX        IDC_COMBO_CAMLIST,59,418,128,74,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "相机列表：",IDC_STATIC,15,418,41,8
+    DEFPUSHBUTTON   "读取",IDC_GETREG,243,539,37,16
+    LTEXT           "帧频：",IDC_STATIC,343,443,40,10
+    LTEXT           "0 frames / s",IDC_STATIC_FRAME_RATE,381,443,85,12
+    CONTROL         "1:1显示",IDC_CHECK_NORMAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,379,418,44,10
+    CONTROL         "",IDC_SLIDER_LED,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,62,515,128,12
+    LTEXT           "红外灯亮度：",IDC_STATIC,15,515,49,8,NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT_LED,202,515,27,14,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    CONTROL         "Led1",IDC_LED1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,485,32,10
+    CONTROL         "Led2",IDC_LED2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,42,485,32,10
+    CONTROL         "Led3",IDC_LED3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,71,485,32,10
+    CONTROL         "Led4",IDC_LED4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,102,485,32,10
+    CONTROL         "Led5",IDC_LED5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,131,485,32,10
+    CONTROL         "Led6",IDC_LED6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,497,32,10
+    CONTROL         "Led7",IDC_LED7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,42,497,32,10
+    CONTROL         "Led8",IDC_LED8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,71,497,32,10
+    CONTROL         "Led9",IDC_LED9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,102,498,32,10
+    CONTROL         "Led10",IDC_LED10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,131,498,32,10
+    CONTROL         "Led11",IDC_LED11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,165,497,32,10
+    DEFPUSHBUTTON   "切割",IDC_CUT,398,487,59,22
+    LTEXT           "采集类型：",IDC_STATIC,203,467,46,13
+    COMBOBOX        IDC_COMBO_CAPTURETYPE,247,466,72,89,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SPLITFLAT DIALOGEX 0, 0, 320, 198
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "自动切割平面指纹"
+FONT 9, "微软雅黑", 400, 0, 0x86
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,263,173,48,13
+    PUSHBUTTON      "取消",IDCANCEL,263,185,48,13
+    CONTROL         "",IDC_STATIC_SPLITWND,"Static",SS_BLACKFRAME | SS_NOTIFY,6,6,307,157
+    LTEXT           "",IDC_STATIC_SPLITTIP,7,175,251,16,SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,3
+ PRODUCTVERSION 1,0,0,3
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "FileDescription", "OGF_usbtst Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 3"
+            VALUE "InternalName", "OGF_usbtst"
+            VALUE "LegalCopyright", "版权所有 (C) 2004"
+            VALUE "OriginalFilename", "OGF_usbtst.EXE"
+            VALUE "ProductName", "OGF_usbtst 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 3"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_OGF_USBTST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 466
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 555
+    END
+
+    IDD_SPLITFLAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_OGF_USBTST_DIALOG AFX_DIALOG_LAYOUT 
+BEGIN
+    0x0000
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 OGF_usbtst(&A)..."
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\OGF_usbtst.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
